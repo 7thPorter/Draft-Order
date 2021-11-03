@@ -1,0 +1,27 @@
+{
+  "name": "draft-order",
+  "version": "1.0.0",
+  "description": "A small app for randomly selecting fantasy draft order",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7thPorter/DraftOrder.git"
+  },
+  "author": "Rusty Porter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7thPorter/DraftOrder/issues"
+  },
+  "homepage": "https://github.com/7thPorter/DraftOrder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
