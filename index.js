@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 //   res.sendFile(path.join(__dirname, "./public/index.html"));
 // });
 
-app.use("/players", player);
+app.use("/api", player);
 
 app.get("/api/test", (req, res) => {
   res.send("This is a test.");

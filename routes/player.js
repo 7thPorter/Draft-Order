@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res, next) => {
   try {
     const newPlayer = await Player.create({ teamName: req.body.name });
-    console.log(newPlayer);
+    res.sendStatus();
   } catch (error) {
     next(error);
   }
