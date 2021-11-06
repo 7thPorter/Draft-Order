@@ -3,21 +3,24 @@ import React, { useState } from "react";
 
 const AddTeams = () => {
   const [team, setTeam] = useState("");
-  const handleSubmit = async (form) => {
+
+  const handleSubmit = async () => {
     await axios.post("/api", {
-      name: form.teamName,
+      name: team,
     });
     setTeam("");
   };
+
   const handleChange = (event) => {
     setTeam(event.target.value);
   };
+
   return (
-    <div>
+    <div id="addTeams">
       <form onSubmit={handleSubmit}>
         <label htmlFor="teamName">Add a team to your league: </label>
-        <input name="teamName" onChange={handleChange} value={team}></input>
-        <button type="submit" className="submit-button">
+        <input name="name" onChange={handleChange} value={team}></input>
+        <button type="submit" className="submit-button" id="addButton">
           Add Team
         </button>
       </form>
