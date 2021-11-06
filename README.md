@@ -1,14 +1,7 @@
 Draft Order App
 
-This site will allow you to add players to your Fantasy League Draft, then click a button to determine draft order.
+This app allows a user to add players to a fantasy sports league, then draft those players in a random order.
 
-Features:
-    - Add players to a league.
-    - Click a button to randomly assign players in reverse order
+The app is currently completely funcitonal as intended, although I may revisit this project later to add better styling.
 
-Proposed task order:
-    - Set up initial boilerplate
-    - Define model with Sequelize for player list
-    - Define a route to send back an HTML page with a route to add a player
-    - Define a route to send back a list of players
-    - Define a route to randomly choose players, and render them in reverse order
+NOTE: There's currently a bug in the randomized order, in which the first player entered will always be the last returned. I'm not actively working on resolving this issue, but will fix it if I come back to this project.
